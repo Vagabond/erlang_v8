@@ -1,6 +1,6 @@
+env:
+    GCLIENT_PY3: 0
 steps:
-  - env:
-      GCLIENT_PY3: 0
   - commands:
       - ". $HOME/.asdf/asdf.sh"
       - "asdf local erlang 22.1.8"

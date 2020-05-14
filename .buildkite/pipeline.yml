@@ -1,8 +1,7 @@
 steps:
   - commands:
       - ". $HOME/.asdf/asdf.sh"
-      - "asdf local erlang 22.1.8"
-      - "asdf reshim && make -e GCLIENT_PY3=0 -e PATH=depot_tools/:$PATH"
+      - "./buildkite/build.sh"
     name: ":hammer: build"
     agents:
       queue: "erlang"
